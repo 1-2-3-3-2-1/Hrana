@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gdje kušati soparnik</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get the city from the query parameter
+            const params = new URLSearchParams(window.location.search);
+            const selectedCity = params.get("city");
+
+            if (selectedCity) {
+                // Filter the restaurant list
+                const restaurants = document.querySelectorAll(".restaurants li");
+                restaurants.forEach(restaurant => {
+                    if (!restaurant.textContent.includes(selectedCity)) {
+                        restaurant.style.display = "none"; // Hide restaurants not in the selected city
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Gdje kušati soparnik</h1>
+</header>
+
+<main>
+    <section class="page-section">
+        <h2>Preporučeni restorani</h2>
+        <ul class="restaurants">
+            <li>Konoba Kamen - Gata</li>
+            <li>Restoran Kaštil Slanica - Omiš</li>
+            <li>Obrt za soparnik - Dugopolje</li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>
