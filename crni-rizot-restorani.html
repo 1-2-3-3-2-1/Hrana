@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gdje kušati Crni rižot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get the city from the query parameter
+            const params = new URLSearchParams(window.location.search);
+            const selectedCity = params.get("city");
+
+            if (selectedCity) {
+                // Filter the restaurant list
+                const restaurants = document.querySelectorAll(".restaurants li");
+                restaurants.forEach(restaurant => {
+                    if (!restaurant.textContent.includes(selectedCity)) {
+                        restaurant.style.display = "none"; // Hide restaurants not in the selected city
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Gdje kušati Crni rižot</h1>
+</header>
+
+<section class="page-section">
+    <h2>Preporučeni restorani</h2>
+    <ul class="restaurants">
+        <li>Restoran Dalmacija - Split</li>
+        <li>Konoba Kaleta - Dubrovnik</li>
+        <li>Restoran Riva - Rijeka</li>
+        <li>Restoran Kruh-Rijeka</li>
+        <li>Restoran Mornar-Rijeka</li>
+</section>
+
+</body>
+</html>
