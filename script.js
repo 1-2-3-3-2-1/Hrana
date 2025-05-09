@@ -1,47 +1,106 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cityModal = document.createElement("div");
-    cityModal.id = "cityModal";
-    cityModal.innerHTML = `
-        <div class="modal-content">
-            <h2>Odaberite svoj grad</h2>
-            <select id="citySelect">
-                <option value="Rijeka">Rijeka</option>
-                <option value="Zagreb">Zagreb</option>
-                <option value="Pula">Pula</option>
-                <option value="Split">Split</option>                
-            </select>
-            <button id="confirmCity">Potvrdi</button>
-        </div>
-    `;
-    document.body.appendChild(cityModal);
-
-    const modal = document.getElementById("cityModal");
-    const citySelect = document.getElementById("citySelect");
-    const confirmCityBtn = document.getElementById("confirmCity");
-
-    let selectedCity = null;
-
-    // Show the modal on page load
-    modal.style.display = "none";
-
-    confirmCityBtn.addEventListener("click", () => {
-        selectedCity = citySelect.value;
-        modal.style.display = "none";
-    });
-
-    // Add event listeners to "Gdje kušati" buttons
+    // Ako smo na stranici s gumbima "Gdje kušati"
     const filterButtons = document.querySelectorAll(".filter-button");
-    filterButtons.forEach(button => {
-        button.addEventListener("click", (event) => {
-            if (!selectedCity) {
-                event.preventDefault(); // Prevent navigation if no city is selected
-                modal.style.display = "flex";
-                return;
-            }
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+                const href = button.getAttribute("href");
 
-            // Append the selected city as a query parameter to the button's href
-            const href = button.getAttribute("href");
-            button.setAttribute("href", `${href}?city=${selectedCity}`);
+                // Modal za grad
+                const modal = document.createElement("div");
+                modal.id = "citySelectModal";
+                modal.style.position = "fixed";
+                modal.style.top = 0;
+                modal.style.left = 0;
+                modal.style.width = "100vw";
+                modal.style.height = "100vh";
+                modal.style.background = "rgba(0,0,0,0.6)";
+                modal.style.display = "flex";
+                modal.style.alignItems = "center";
+                modal.style.justifyContent = "center";
+                modal.style.zIndex = "1000";
+
+                const modalContent = document.createElement("div");
+                modalContent.style.background = "white";
+                modalContent.style.padding = "2rem";
+                modalContent.style.borderRadius = "10px";
+                modalContent.style.textAlign = "center";
+
+                const label = document.createElement("label");
+                label.textContent = "Odaberi grad:";
+                label.style.display = "block";
+                label.style.marginBottom = "1rem";
+
+                const select = document.createElement("select");
+                select.innerHTML = `
+                    <option value="">-- Odaberi grad --</option>
+                    <option value="Zagreb">Zagreb</option>
+                    <option value="Sarajevo">Sarajevo</option>
+                    <option value="Split">Split</option>
+                    <option value="Osijek">Osijek</option>
+                    <option value="Mostar">Mostar</option>
+                `;
+                select.style.marginBottom = "1rem";
+
+                const confirmBtn = document.createElement("button");
+                confirmBtn.textContent = "Filtriraj";
+                confirmBtn.style.marginTop = "1rem";
+
+                confirmBtn.addEventListener("click", () => {
+                    const city = select.value;
+                    if (city) {
+                        window.location.href = `${href}?city=${encodeURIComponent(city)}`;
+                    }
+                });
+
+                modalContent.appendChild(label);
+                modalContent.appendChild(select);
+                modalContent.appendChild(confirmBtn);
+                modal.appendChild(modalContent);
+                document.body.appendChild(modal);
+
+                // Klik izvan modala
+                modal.addEventListener("click", (e) => {
+                    if (e.target === modal) {
+                        modal.remove();
+                    }
+                });
+
+                // ESC za zatvaranje
+                document.addEventListener("keydown", function escListener(e) {
+                    if (e.key === "Escape") {
+                        modal.remove();
+                        document.removeEventListener("keydown", escListener);
+                    }
+                });
+            });
         });
-    });
+    }
+
+    // Ako smo na nekoj od *-restorani.html stranica s filtriranjem prema ?city=
+    const citySelect = document.getElementById("citySelect");
+    const restaurantItems = document.querySelectorAll(".restaurants li");
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedCity = urlParams.get("city");
+
+    if (citySelect && restaurantItems.length > 0) {
+        // Ako city postoji u URL-u, unaprijed filtriraj
+        if (selectedCity) {
+            citySelect.value = selectedCity;
+            filterRestaurants(selectedCity);
+        }
+
+        // Reagiranje na promjenu selekta
+        citySelect.addEventListener("change", () => {
+            filterRestaurants(citySelect.value);
+        });
+    }
+
+    function filterRestaurants(city) {
+        restaurantItems.forEach(item => {
+            const match = city === "" || item.textContent.includes(city);
+            item.style.display = match ? "list-item" : "none";
+        });
+    }
 });
