@@ -339,3 +339,82 @@ nav ul li.login a {
 nav ul li.login a:hover {
     background-color: #8c6239;
 }
+<<<<<<< HEAD
+=======
+.modal {
+    display: none; /* Skriveno dok se ne aktivira */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Poluprozirna pozadina */
+}
+
+.modal-content {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centriranje modala */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blaga sjena */
+    border-radius: 8px; /* Zaobljeni rubovi */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+/* Zamagljivanje pozadine */
+.modal {
+    display: none; /* Skriveno dok se ne aktivira */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Poluprozirna pozadina */
+    backdrop-filter: blur(5px); /* Zamagljivanje pozadine */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1001; /* Viši sloj od zamagljene pozadine */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blaga sjena */
+    position: relative;
+}
+>>>>>>> 5c48ed44298071cf3da8294406b778722e139e84

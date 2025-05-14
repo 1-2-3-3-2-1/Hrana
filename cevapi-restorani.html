@@ -4,40 +4,27 @@
     <meta charset="UTF-8">
     <title>Gdje kušati Ćevape</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Get the city from the query parameter
-            const params = new URLSearchParams(window.location.search);
-            const selectedCity = params.get("city");
-
-            if (selectedCity) {
-                // Filter the restaurant list
-                const restaurants = document.querySelectorAll(".restaurants li");
-                restaurants.forEach(restaurant => {
-                    if (!restaurant.textContent.includes(selectedCity)) {
-                        restaurant.style.display = "none"; // Hide restaurants not in the selected city
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
     <h1>Gdje kušati Ćevape</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="recepti.html">Recepti</a></li>
-            <li><a href="#">O nama</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li> 
-        </ul>
-        <ul class="nav-right">
-            <li class="login"><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
 </header>
+
+<!-- Modal za odabir grada -->
+<div id="cityModal" class="modal">
+    <div class="modal-content">
+        <h2>Odaberite grad</h2>
+        <select id="citySelectModal">
+            <option value="">-- Odaberite grad --</option>
+            <option value="Sarajevo">Sarajevo</option>
+            <option value="Zagreb">Zagreb</option>
+            <option value="Mostar">Mostar</option>
+        </select>
+        <button id="confirmCity">Potvrdi</button>
+    </div>
+</div>
 
 <section class="page-section">
     <h2>Preporučeni restorani</h2>
