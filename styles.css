@@ -339,6 +339,8 @@ nav ul li.login a {
 nav ul li.login a:hover {
     background-color: #8c6239;
 }
+<<<<<<< HEAD
+=======
 .modal {
     display: none; /* Skriveno dok se ne aktivira */
     position: fixed;
@@ -415,3 +417,4 @@ nav ul li.login a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blaga sjena */
     position: relative;
 }
+>>>>>>> 5c48ed44298071cf3da8294406b778722e139e84
