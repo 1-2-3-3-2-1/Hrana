@@ -81,7 +81,7 @@ nav ul li.login a:hover {
 }
 
 nav ul li.login a {
-    background-color: #007BFF; /* Svjetlija plava boja za bolju vidljivost */
+    background-color: #5a4c3d; /* Svjetlija plava boja za bolju vidljivost */
     color: white; /* Bijela boja za tekst */
     padding: 12px 25px; /* Veći padding za bolji izgled */
     border-radius: 30px; /* Zaobljeni rubovi */
