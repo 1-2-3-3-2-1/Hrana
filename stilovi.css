@@ -66,16 +66,22 @@ nav ul li a:hover {
 }
 
 nav ul li.login a {
-    background-color: #5e544a;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    background-color: #007BFF; /* Svjetlija plava boja za bolju vidljivost */
+    color: white; /* Bijela boja za tekst */
+    padding: 12px 25px; /* Veći padding za bolji izgled */
+    border-radius: 30px; /* Zaobljeni rubovi */
+    font-weight: bold; /* Podebljan tekst */
+    font-size: 18px; /* Malo veći font */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Pojačana sjena */
+    transition: all 0.3s ease; /* Glatka tranzicija za hover */
+    text-align: center; /* Centriran tekst */
 }
 
 nav ul li.login a:hover {
-    background-color: #8c6239;
+    background-color: #0056b3; /* Tamnija plava na hover */
+    color: #f8f9fa; /* Svijetlosiva boja za tekst na hover */
+    transform: scale(1.1); /* Lagano povećanje na hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Pojačana sjena na hover */
 }
 
 /* GLAVNI SADRŽAJ */
