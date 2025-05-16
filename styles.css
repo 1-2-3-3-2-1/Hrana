@@ -415,3 +415,6 @@ nav ul li.login a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blaga sjena */
     position: relative;
 }
+.login{
+    text-align: center;
+}

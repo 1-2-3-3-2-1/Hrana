@@ -48,12 +48,27 @@ nav ul li a:hover {
 }
 
 /* LOGIN GUMB */
-.buttons {
-    margin-top: 15px; /* Add spacing above buttons */
-    display: flex;
-    gap: 10px;
+nav ul li.login a {
+   
+    margin-left: 1600px;
+    text-decoration: none;
+    color: #5a4c3d;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
-
+nav ul li.login a:hover {
+    color: #a67c52;
+}
+nav ul li.login a {
+    background-color: #5e544a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+nav ul li.login a:hover {
+    background-color: #8c6239;
+}
 
 .contact-form button {
     padding: 10px 20px;
