@@ -418,3 +418,27 @@ nav ul li.login a:hover {
 .login{
     text-align: center;
 }
+/* Sticky footer layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer stilovi (možeš ih dodatno urediti po želji) */
+footer {
+    background: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
