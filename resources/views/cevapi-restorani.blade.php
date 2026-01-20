@@ -28,7 +28,7 @@
     <div class="modal-content">
         <h2>Odaberite grad</h2>
         <select id="citySelectModal">
-            <option value="">-- Odaberite grad --</option>
+            <option value="">-- Odaberie grad --</option>
             <option value="Sarajevo">Sarajevo</option>
             <option value="Zagreb">Zagreb</option>
             <option value="Mostar">Mostar</option>
