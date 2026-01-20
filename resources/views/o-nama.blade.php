@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>O nama - Tradicionalna Kuhinja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>O nama</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="recepti.html">Recepti</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li class="login"><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about-section page-section">
+        <h2>Naš cilj</h2>
+        <p>
+            Tradicionalna Kuhinja je projekt nastao iz ljubavi prema domaćoj hrani i bogatoj gastronomskoj baštini Hrvatske i regije.
+            Naš cilj je očuvati i promovirati autentične recepte, lokalne specijalitete i najbolje restorane koji njeguju tradiciju.
+        </p>
+        <p>
+            Želimo povezati ljubitelje dobre hrane s mjestima gdje mogu kušati izvorna jela, naučiti više o njihovoj povijesti i pripremi, te potaknuti zajednicu na očuvanje kulinarske tradicije.
+        </p>
+        <p>
+            Pridružite nam se u otkrivanju okusa koji pričaju priču o našoj kulturi!
+        </p>
+    </section>
+
+    <section class="team-section page-section">
+        <h2>Naš tim</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <strong>Ana</strong>
+                <p>Urednica sadržaja i istraživačica recepata</p>
+            </div>
+            <div class="team-member">
+                <strong>Marko</strong>
+                <p>Web developer i dizajner</p>
+            </div>
+            <div class="team-member">
+                <strong>Ivana</strong>
+                <p>Stručnjakinja za društvene mreže i komunikaciju</p>
+            </div>
+        </div>
+        <p>
+            Naš tim čine entuzijasti i zaljubljenici u gastronomiju, putovanja i digitalne tehnologije. Svaki član tima doprinosi svojim znanjem i iskustvom kako bismo zajedno stvorili platformu koja povezuje tradiciju i suvremenost.
+        </p>
+    </section>
+
+    <section class="vision-section page-section">
+        <h2>Vizija</h2>
+        <p>
+            Vjerujemo da je hrana više od obroka – ona je dio identiteta, povijesti i zajedništva. Naša vizija je postati vodeći online vodič za tradicionalnu kuhinju i autentična gastronomska iskustva u regiji.
+        </p>
+        <blockquote>
+            "Okusi djetinjstva, mirisi doma i zajedništvo za stolom – to je ono što želimo sačuvati i podijeliti s vama"
+        </blockquote>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
+        <ul class="footer-nav">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="recepti.html">Recepti</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

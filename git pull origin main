@@ -1,0 +1,91 @@
+* [33m3f5da22[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m sadas
+* [33mebca0a6[m test
+* [33mcc60938[m s
+* [33mc2a0dc7[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m login frame
+*   [33m3f676b2[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[33m|[m[34m\[m  
+[33m|[m * [33m157f478[m login mali edit
+* [34m|[m [33m0b43b6c[m o nama
+* [34m|[m [33m48f5f81[m o nama uredjen
+[34m|[m[34m/[m  
+* [33m1d103a7[m promjena recepta
+*   [33m82991b4[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[35m|[m[36m\[m  
+[35m|[m * [33mca871ce[m recepti
+* [36m|[m [33m452eb9b[m dodana dva nova jela
+[36m|[m[36m/[m  
+* [33m730b5fa[m promjena papice
+*   [33m74dbb19[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;31m|[m[1;32m\[m  
+[1;31m|[m *   [33m1d1bd1c[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;31m|[m [1;33m|[m[1;34m\[m  
+[1;31m|[m * [1;34m|[m [33m030bc07[m sarma
+* [1;34m|[m [1;34m|[m [33m8d64e2b[m hej
+[1;34m|[m [1;34m|[m[1;34m/[m  
+[1;34m|[m[1;34m/[m[1;34m|[m   
+* [1;34m|[m   [33mf48a357[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;35m|[m[1;36m\[m [1;34m\[m  
+[1;35m|[m * [1;34m|[m [33m25954fd[m Rename Sarma.jpg to sarma.jpg
+* [1;36m|[m [1;34m|[m [33me806281[m o nama gumnb radi svuzgdje
+[1;36m|[m[1;36m/[m [1;34m/[m  
+* [1;34m|[m [33mc246fee[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[31m|[m[1;34m\[m[1;34m|[m 
+[31m|[m * [33m4a52c2e[m login v2
+[31m|[m * [33m8fe4ba4[m login
+* [32m|[m [33m182cc3d[m o nama
+[32m|[m[32m/[m  
+* [33mc56d3e0[m header+footer popravak
+*   [33mf9c11f6[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[33m|[m[34m\[m  
+[33m|[m *   [33m881a372[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[33m|[m [35m|[m[36m\[m  
+[33m|[m * [36m|[m [33md29222a[m recepti css
+* [36m|[m [36m|[m [33md7d066c[m svi filteri kako treba
+[36m|[m [36m|[m[36m/[m  
+[36m|[m[36m/[m[36m|[m   
+* [36m|[m   [33m5c48ed4[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;31m|[m[1;32m\[m [36m\[m  
+[1;31m|[m * [36m|[m [33m547eec7[m uređen index
+[1;31m|[m [36m|[m[36m/[m  
+* [36m/[m [33mfe7453d[m filteri kako treba
+[36m|[m[36m/[m  
+* [33m2264a7c[m header isti na svakom htmlu
+*   [33m552ec3b[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;33m|[m[1;34m\[m  
+[1;33m|[m * [33m6a87428[m recepti promjene
+[1;33m|[m * [33m41087de[m recepti
+[1;33m|[m *   [33m9a44b7f[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;33m|[m [1;35m|[m[1;36m\[m  
+[1;33m|[m [1;35m|[m * [33mdc701bb[m prsut onaj
+[1;33m|[m [1;35m|[m * [33mf382103[m peka prava
+[1;33m|[m [1;35m|[m * [33m5c4530f[m pasticada prava
+[1;33m|[m [1;35m|[m * [33mbab4f68[m rizoto masper pravfi
+[1;33m|[m [1;35m|[m * [33m0d89f56[m cevapi pravi
+[1;33m|[m * [1;36m|[m [33m1e1f8f5[m recepti
+[1;33m|[m [1;36m|[m[1;36m/[m  
+[1;33m|[m *   [33m328769e[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[1;33m|[m [31m|[m[32m\[m  
+[1;33m|[m [31m|[m * [33m81b6643[m karlo probaj sad
+[1;33m|[m * [32m|[m [33m5884134[m niko test
+[1;33m|[m [32m|[m[32m/[m  
+* [32m/[m [33m1cb2649[m alan java
+[32m|[m[32m/[m  
+* [33m129c88c[m folder delete
+* [33m0413417[m adsas
+* [33m90ed220[m čejng
+[32m|[m * [33m23ab4d9[m[33m ([m[1;31morigin/master[m[33m)[m opet ono mpoje
+[32m|[m * [33mf442a73[m karlo pravi
+[32m|[m * [33md9dd84f[m promjena na cevapi html
+[32m|[m[32m/[m  
+* [33m5eb9b67[m alan proba
+* [33m29462db[m pravi burek (mljac)
+* [33mf0296ff[m test
+*   [33m98d7f8d[m Merge branch 'main' of https://github.com/1-2-3-3-2-1/Hrana
+[34m|[m[35m\[m  
+[34m|[m * [33mbe60968[m first commit
+[34m|[m * [33m6eb4eae[m test
+[34m|[m * [33m848a65c[m test
+[34m|[m * [33mf040d98[m Add files via upload
+* [33md3262a7[m commit
+* [33m58daaad[m commit
+* [33mde9186d[m proba

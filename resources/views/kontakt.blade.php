@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Tradicionalna Kuhinja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Kontakt</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="recepti.html">Recepti</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li> 
+        </ul>
+        <ul class="nav-right">
+            <li class="login"><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-info">
+        <h2>Kontaktirajte nas</h2>
+        <p>Za bilo kakva pitanja, komentare ili prijedloge, slobodno nas kontaktirajte koristeći obrazac u nastavku.</p>
+
+        <h3>Naši podaci:</h3>
+        <ul>
+            <li>Email: <a href="mailto:info@tradicionalnakuhinja.com">info@tradicionalnakuhinja.com</a></li>
+            <li>Telefon: +385 123 456 789</li>
+            <li>Adresa: Zagrebačka 123, 10000 Zagreb, Hrvatska</li>
+        </ul>
+    </section>
+
+    <section class="contact-form">
+        <h3>Pošaljite nam poruku</h3>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Ime i Prezime:</label>
+            <input type="text" id="name" name="name" required placeholder="Vaše ime i prezime">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Vaš email">
+
+            <label for="message">Poruka:</label>
+            <textarea id="message" name="message" required placeholder="Vaša poruka"></textarea>
+
+            <button type="submit">Pošaljite</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
+            <ul class="footer-nav">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="recepti.html">Recepti</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
