@@ -55,6 +55,7 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </div>
+        
     </footer>
 
 </body>
