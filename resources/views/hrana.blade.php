@@ -90,7 +90,7 @@
     <section class="dish">
     <img src="punjena-paprika.jpg" alt="Punjena paprika">
     <div class="dish-info">
-        <h3>Punjena paprika</h3>
+        <h3>Punjena parika</h3>
         <p>Sočna paprika punjena mesom i rižom, kuhana u bogatom umaku od rajčice.</p>
         <div class="buttons">
             <a href="punjena-paprika-restorani.html" class="filter-button">Gdje kušati</a>
