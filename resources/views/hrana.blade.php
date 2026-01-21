@@ -102,7 +102,7 @@
     <img src="brodet.jpg" alt="Brodet">
     <div class="dish-info">
         <h3>Brodet</h3>
-        <p>Tradicionalno dalmatinsko riblje jelo pripremljeno od raznih vrsta ribe, luka, rajčice i začina, posluženo s palentom.</p>
+        <p>Tradicionalno dalmatinso riblje jelo pripremljeno od raznih vrsta ribe, luka, rajčice i začina, posluženo s palentom.</p>
         <div class="buttons">
             <a href="brodet-restorani.html" class="filter-button">Gdje kušati</a>
         </div>
