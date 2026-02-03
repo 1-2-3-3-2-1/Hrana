@@ -14,7 +14,7 @@ Route::get('/cevapi-restorani', function () {
 
 // Stranica sa crnim rižotom
 Route::get('/crni-rizot-restorani', function () {
-    return view('crni-rizot-restorani'); // ovde stavi ime Blade fajla za crni rižot
+    return view('crni-rizot-restorani'); // ovde stavi ime Blad fajla za crni rižot
 });
 
 
