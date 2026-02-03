@@ -5,11 +5,13 @@ use Illuminate\Support\Facades\Route;
 // Početna stranica
 Route::get('/', function () {
     return view('hrana'); // naziv Blade fajla bez .blade.php
+    
 });
 
 // Stranica sa ćevapima
 Route::get('/cevapi-restorani', function () {
     return view('cevapi-restorani'); // ovde stavi ime odgovarajućeg Blade fajla
+   
 });
 
 // Stranica sa crnim rižotom
@@ -62,5 +64,9 @@ Route::get('/login', function () {
 // Stranica sa brodetom
 Route::get('/kontakt', function () {
     return view('kontakt'); // ovde stavi ime odgovarajućeg Blade fajla
+});
+
+Route::get('/recepti', function () {
+    return view('recepti'); // ovde stavi ime odgovarajućeg Blade fajla
 });
 
