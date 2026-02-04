@@ -13,7 +13,7 @@
     <h1>Tradicionalna Kuhinja</h1>
     <nav>
         <ul>
-            <li><a href="/index">Početna</a></li>
+            <li><a href="/">Početna</a></li>
             <li><a href="/recepti">Recepti</a></li>
             <li><a href="/o-nama">O nama</a></li>
             <li><a href="/kontakt">Kontakt</a></li> 
@@ -85,29 +85,27 @@
         </div>
     </section>
     
-   
-
     <section class="dish">
-    <img src="punjena-paprika.jpg" alt="Punjena paprika">
-    <div class="dish-info">
-        <h3>Punjena parika</h3>
-        <p>Sočna paprika punjena mesom i rižom, kuhana u bogatom umaku od rajčice.</p>
-        <div class="buttons">
-            <a href="/punjena-paprika-restorani" class="filter-button">Gdje kušati</a>
+        <img src="punjena-paprika.jpg" alt="Punjena paprika">
+        <div class="dish-info">
+            <h3>Punjena paprika</h3>
+            <p>Sočna paprika punjena mesom i rižom, kuhana u bogatom umaku od rajčice.</p>
+            <div class="buttons">
+                <a href="/punjena-paprika-restorani" class="filter-button">Gdje kušati</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
     
-   <section class="dish">
-    <img src="brodet.jpg" alt="Brodet">
-    <div class="dish-info">
-        <h3>Brodet</h3>
-        <p>Tradicionalno dalmatinsko riblje jelo pripremljeno od raznih vrsta ribe, luka, rajčice i začina, posluženo s palentom.</p>
-        <div class="buttons">
-            <a href="/brodet-restorani" class="filter-button">Gdje kušati</a>
+    <section class="dish">
+        <img src="brodet.jpg" alt="Brodet">
+        <div class="dish-info">
+            <h3>Brodet</h3>
+            <p>Tradicionalno dalmatinsko riblje jelo pripremljeno od raznih vrsta ribe, luka, rajčice i začina, posluženo s palentom.</p>
+            <div class="buttons">
+                <a href="/brodet-restorani" class="filter-button">Gdje kušati</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
     
     <section class="dish">
         <img src="soparnik.jpg" alt="Soparnik">
@@ -119,11 +117,12 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
             <ul class="footer-nav">
-                <li><a href="/index">Početna</a></li>
+                <li><a href="/">Početna</a></li>
                 <li><a href="/recepti">Recepti</a></li>
                 <li><a href="/o-nama">O nama</a></li>
                 <li><a href="/kontakt">Kontakt</a></li>

@@ -10,13 +10,13 @@
         <h1>Tradicionalna Kuhinja</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Početna</a></li>
-                <li><a href="recepti.html">Recepti</a></li>
-                <li><a href="o-nama.html">O nama</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li> 
+                <li><a href="/">Početna</a></li>
+                <li><a href="/recepti">Recepti</a></li>
+                <li><a href="/o-nama">O nama</a></li>
+                <li><a href="/kontakt">Kontakt</a></li> 
             </ul>
             <ul class="nav-right">
-                <li class="login"><a href="login.html">Login</a></li>
+                <li class="login"><a href="/login">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -37,10 +37,10 @@
         <div class="footer-content">
             <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
             <ul class="footer-nav">
-                <li><a href="index.html">Početna</a></li>
-                <li><a href="recepti.html">Recepti</a></li>
-                <li><a href="o-nama.html">O nama</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="/">Početna</a></li>
+                <li><a href="/recepti">Recepti</a></li>
+                <li><a href="/o-nama">O nama</a></li>
+                <li><a href="/kontakt">Kontakt</a></li>
             </ul>
         </div>
     </footer>
