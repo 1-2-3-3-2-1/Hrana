@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ZAGLAVLJE */
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a00000;
+}
+
+/* LOGIN GUMB */
+nav ul li.login a {
+   
+    margin-left: 1600px;
+    text-decoration: none;
+    color: #5a4c3d;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav ul li.login a:hover {
+    color: #a67c52;
+}
+nav ul li.login a {
+    background-color: #5e544a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+nav ul li.login a:hover {
+    background-color: #8c6239;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #8B0000;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li.login a {
+    background-color: #5a4c3d; /* Svjetlija plava boja za bolju vidljivost */
+    color: white; /* Bijela boja za tekst */
+    padding: 12px 25px; /* Veći padding za bolji izgled */
+    border-radius: 30px; /* Zaobljeni rubovi */
+    font-weight: bold; /* Podebljan tekst */
+    font-size: 18px; /* Malo veći font */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Pojačana sjena */
+    transition: all 0.3s ease; /* Glatka tranzicija za hover */
+    text-align: center; /* Centriran tekst */
+}
+
+nav ul li.login a:hover {
+    background-color: #0056b3; /* Tamnija plava na hover */
+    color: #f8f9fa; /* Svijetlosiva boja za tekst na hover */
+    transform: scale(1.1); /* Lagano povećanje na hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Pojačana sjena na hover */
+}
+
+/* GLAVNI SADRŽAJ */
+main {
+    padding: 40px 0;
+}
+
+/* SEKCIJE RECEPTA */
+section {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #8B0000;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
+section h3 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+section h4 {
+    color: #444;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section ul,
+section ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul li,
+section ol li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* PRIPREMA */
+section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* RESPONSIVNOST */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.nav-right {
+        margin: 10px 0 0;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #a00000;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 10px 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+    color: #ddd;
+}
