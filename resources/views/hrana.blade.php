@@ -6,7 +6,6 @@
     <title>Tradicionalna Kuhinja</title>
     <link rel="stylesheet" href="styles.css">
     <script src="{{ asset('js/script.js') }}" defer></script>
-    
 </head>
 <body>
 
@@ -19,13 +18,18 @@
             <li><a href="/o-nama">O nama</a></li>
             <li><a href="/kontakt">Kontakt</a></li> 
         </ul>
+
         <ul class="nav-right">
             <li class="login"><a href="/login">Login</a></li>
+            <li class="register">
+                <a href="/register" class="register-btn">Registracija</a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
+
     <section class="intro">
         <h2>Dobrodošli u svijet tradicionalnih jela</h2>
         <p>Otkrijte bogatstvo okusa naše kuhinje kroz autentične recepte.</p>
@@ -76,7 +80,7 @@
     </section>
     
     <section class="dish">
-        <img src="sarma.jpg" alt="sarma">
+        <img src="sarma.jpg" alt="Sarma">
         <div class="dish-info">
             <h3>Sarma</h3>
             <p>Kiseli kupus punjen mljevenim mesom i rižom, kuhan u umaku od rajčice.</p>
@@ -119,19 +123,19 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
-            <ul class="footer-nav">
-                <li><a href="/">Početna</a></li>
-                <li><a href="/recepti">Recepti</a></li>
-                <li><a href="/o-nama">O nama</a></li>
-                <li><a href="/kontakt">Kontakt</a></li>
-            </ul>
-        </div>
-    </footer>
-
 </main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
+        <ul class="footer-nav">
+            <li><a href="/">Početna</a></li>
+            <li><a href="/recepti">Recepti</a></li>
+            <li><a href="/o-nama">O nama</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>

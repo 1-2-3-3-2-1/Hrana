@@ -70,3 +70,6 @@ Route::get('/recepti', function () {
     return view('recepti'); // ovde stavi ime odgovarajućeg Blade fajla
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
