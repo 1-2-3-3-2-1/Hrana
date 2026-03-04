@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 // Početna stranica
 Route::get('/', function () {
@@ -70,6 +71,6 @@ Route::get('/recepti', function () {
     return view('recepti'); // ovde stavi ime odgovarajućeg Blade fajla
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register.form');
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+
