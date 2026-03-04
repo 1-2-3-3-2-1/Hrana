@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 // Početna stranica
 Route::get('/', function () {
     return view('hrana'); // naziv Blade fajla bez .blade.php
-    
-});
+ })->name('welcome'); 
 
 // Stranica sa ćevapima
 Route::get('/cevapi-restorani', function () {
@@ -55,12 +55,6 @@ Route::get('/soparnik-restorani', function () {
 Route::get('/o-nama', function () {
     return view('o-nama'); // ovde stavi ime odgovarajućeg Blade fajla
 });
-
-// Stranica sa pasticadom
-Route::get('/login', function () {
-    return view('login'); // ovde stavi ime Blade fajla za login
-});
-
 // Stranica sa brodetom
 Route::get('/kontakt', function () {
     return view('kontakt'); // ovde stavi ime odgovarajućeg Blade fajla
@@ -70,6 +64,8 @@ Route::get('/recepti', function () {
     return view('recepti'); // ovde stavi ime odgovarajućeg Blade fajla
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register.form');
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login.form');
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
