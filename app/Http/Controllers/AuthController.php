@@ -31,8 +31,7 @@ public function showRegister()
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-
-        Auth::login($user);
+<
         $request->session()->regenerate();
 
         return redirect()->route('welcome');
