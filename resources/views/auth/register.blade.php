@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registracija - Tradicionalna Kuhinja</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
 
 <header>
     <h1>Tradicionalna Kuhinja</h1>
+
     <nav>
         <ul>
             <li><a href="/">Početna</a></li>
@@ -20,51 +22,70 @@
 
         <ul class="nav-right">
             <li><a href="/login">Login</a></li>
-            <li><a href="/register" class="register-btn">Registracija</a></li>
+            <li><a href="/register">Registracija</a></li>
         </ul>
     </nav>
 </header>
 
-<main class="auth-container">
-    <div class="auth-box">
-        <h2>Registracija</h2>
+<!-- REGISTRACIJA -->
+<main style="display:flex; justify-content:center; margin-top:40px;">
 
-        <form action="/register" method="POST">
-            
-            <div class="form-group">
-                <label for="name">Ime i prezime</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+<div style="width:100%; max-width:500px;">
 
-            <div class="form-group">
-                <label for="email">Email adresa</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+<h2>Registracija</h2>
 
-            <div class="form-group">
-                <label for="password">Lozinka</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+<form method="POST" action="{{ route('register') }}"
+      style="display:flex; flex-direction:column; gap:15px;">
 
-            <div class="form-group">
-                <label for="confirm_password">Potvrdi lozinku</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-            </div>
+@csrf
 
-            <button type="submit" class="auth-button">Registriraj se</button>
+<div>
+<label>Ime i prezime</label>
+<input type="text" name="name" required
+style="height:40px; width:100%;">
+</div>
 
-            <p class="switch-auth">
-                Već imaš račun? <a href="/login">Prijavi se</a>
-            </p>
+<div>
+<label>Email</label>
+<input type="email" name="email" required
+style="height:40px; width:100%;">
+</div>
 
-        </form>
+<div>
+<label>Lozinka</label>
+<input type="password" name="password" required
+style="height:40px; width:100%;">
+</div>
+
+<div>
+<label>Potvrdi lozinku</label>
+<input type="password" name="password_confirmation" required
+style="height:40px; width:100%;">
+</div>
+
+<button type="submit" style="height:45px;">Registriraj se</button>
+
+@if($errors->any())
+    <div style="color:red;">
+        @foreach($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
     </div>
+@endif
+
+<p>
+Već imaš račun? <a href="/login">Prijavi se</a>
+</p>
+
+</form>
+
+</div>
 </main>
 
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Tradicionalna Kuhinja. Sva prava pridržana.</p>
-    </div>
+<footer style="margin-top:50px;">
+<div class="footer-content">
+<p>&copy; 2025 Tradicionalna Kuhinja</p>
+</div>
 </footer>
 
 </body>
