@@ -9,14 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-public function showRegister()
-{
-    if (Auth::check()) {
-        return redirect()->route('welcome');
+    public function showRegister()
+    {
+        return view('auth.register'); // putanja do tvog register blada
     }
-
-    return view('auth.register');
-}
 
     public function register(Request $request)
     {
@@ -39,13 +35,9 @@ public function showRegister()
     }
 
     public function showLogin()
-{
-    if (Auth::check()) {
-        return redirect()->route('welcome');
+    {
+        return view('auth.login'); // putanja do tvog login blada
     }
-
-    return view('auth.login');
-}
 
     public function login(Request $request)
     {
@@ -55,11 +47,9 @@ public function showRegister()
         ]);
 
         if (Auth::attempt($credentials)) {
-
-    $request->session()->regenerate();
-
-    return redirect()->intended(route('welcome'));
-}
+            $request->session()->regenerate();
+            return redirect()->route('welcome');
+        }
 
         return back()
             ->withErrors(['email' => 'Neispravni podaci.'])
@@ -75,4 +65,3 @@ public function showRegister()
         return redirect()->route('login.form');
     }
 }
-
